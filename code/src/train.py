@@ -44,7 +44,7 @@ def parse_args():
                         help='if multi-gpu training under ddp')
     parser.add_argument('--gpu_id', type=int, default=1,
                         help='gpu id')
-    parser.add_argument('--local_rank', default=-1, type=int,
+    parser.add_argument('--local-rank', default=-1, type=int,
                         help='node rank for distributed training')
     parser.add_argument('--random_sample', action='store_true',default=True, 
                         help='whether to sample the dataset with random sampler')
